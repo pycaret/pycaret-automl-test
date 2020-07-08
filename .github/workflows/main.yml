@@ -1,4 +1,4 @@
-name: PyCaret AutoML Git Action 2
+name: PyCaret AutoML Git Action
 on: 
   push :
     branches: [ master ]  
@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: PyCaret AutoML Git Action
         id: model
-        uses: pycaret/pycaret-git-actions@v4.0
+        uses: pycaret/pycaret-git-actions@v5.0
       - name: Upload model.pkl
         uses: actions/upload-artifact@v2
         with: 
