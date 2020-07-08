@@ -1,7 +1,9 @@
-name: Juice Classifier
-on: [push]
+name: PyCaret AutoML Git Action
+on: 
+  push :
+    branches: [ master ]  
 jobs:
-  build_model:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: PyCaret AutoML Git Action
