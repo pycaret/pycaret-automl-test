@@ -1,4 +1,4 @@
-name: PyCaret AutoML Git Action
+name: PyCaret AutoML Git Action 2
 on: 
   push :
     branches: [ master ]  
