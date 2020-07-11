@@ -19,3 +19,8 @@ jobs:
         with: 
           name: logs
           path: logs.log
+      - name: Upload juice1_logs.csv
+        uses: actions/upload-artifact@v2
+        with: 
+          name: experiment-logs
+          path: juice1_logs.csv
