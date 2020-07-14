@@ -17,13 +17,13 @@ jobs:
         with: 
           name: model
           path: model.pkl
-      - name: Upload logs.log
-        uses: actions/upload-artifact@v2
-        with: 
-          name: logs
-          path: logs.log
       - name: Upload exp_github_logs.csv
         uses: actions/upload-artifact@v2
         with: 
           name: experiment-logs
-          path: exp_github__logs.csv
+          path: exp_github_logs.csv
+      - name: Upload logs.log
+        uses: actions/upload-artifact@v2
+        with: 
+          name: system-logs
+          path: logs.log
