@@ -1,0 +1,29 @@
+name: PyCaret AutoML Git Action
+on: 
+  push :
+    branches: [ master ]  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: PyCaret AutoML Git Action
+        id: model
+        uses: pycaret/pycaret-git-actions@v14.0
+        with:
+          DATASET: "juice"
+          TARGET: "Purchase"
+      - name: Upload model.pkl
+        uses: actions/upload-artifact@v2
+        with: 
+          name: model
+          path: model.pkl
+      - name: Upload logs.log
+        uses: actions/upload-artifact@v2
+        with: 
+          name: logs
+          path: logs.log
+      - name: Upload exp_github_logs.csv
+        uses: actions/upload-artifact@v2
+        with: 
+          name: experiment-logs
+          path: exp_github__logs.csv
