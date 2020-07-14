@@ -8,11 +8,13 @@ jobs:
     steps:
       - name: PyCaret AutoML Git Action
         id: model
-        uses: pycaret/pycaret-git-actions@v11.0
+        uses: pycaret/pycaret-git-actions@v12.0
+        with:
+          myInput: "Purchase"
       - name: Upload model.pkl
         uses: actions/upload-artifact@v2
         with: 
-          name: my-artifact
+          name: model
           path: model.pkl
       - name: Upload logs.log
         uses: actions/upload-artifact@v2
