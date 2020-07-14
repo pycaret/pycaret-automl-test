@@ -25,4 +25,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with: 
           name: experiment-logs
-          path: juice1_logs.csv
+          path: exp1_logs.csv
