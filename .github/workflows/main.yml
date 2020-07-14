@@ -10,8 +10,8 @@ jobs:
         id: model
         uses: pycaret/pycaret-git-actions@v14.0
         with:
-          DATASET: "credit"
-          TARGET: "default"
+          DATASET: "income"
+          TARGET: "income >50K"
       - name: Upload model.pkl
         uses: actions/upload-artifact@v2
         with: 
