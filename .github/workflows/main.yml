@@ -8,10 +8,11 @@ jobs:
     steps:
       - name: PyCaret AutoML Git Action
         id: model
-        uses: pycaret/pycaret-git-actions@automl-pycaret2
+        uses: pycaret/pycaret-git-actions@automl
         with:
           DATASET: "boston"
           TARGET: "medv"
+          USECASE: "classification"
       - name: Upload model.pkl
         uses: actions/upload-artifact@v2
         with: 
