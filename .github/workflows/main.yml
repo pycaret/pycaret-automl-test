@@ -10,9 +10,9 @@ jobs:
         id: model
         uses: pycaret/pycaret-git-actions@automl
         with:
-          DATASET: "boston"
-          TARGET: "medv"
-          USECASE: "regression"
+          DATASET: "juice"
+          TARGET: "Purchase"
+          USECASE: "classification"
       - name: Upload model.pkl
         uses: actions/upload-artifact@v2
         with: 
