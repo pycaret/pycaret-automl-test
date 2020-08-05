@@ -12,7 +12,7 @@ jobs:
         with:
           DATASET: "boston"
           TARGET: "medv"
-          USECASE: "classification"
+          USECASE: "regression"
       - name: Upload model.pkl
         uses: actions/upload-artifact@v2
         with: 
