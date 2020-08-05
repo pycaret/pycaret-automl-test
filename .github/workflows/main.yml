@@ -10,8 +10,8 @@ jobs:
         id: model
         uses: pycaret/pycaret-git-actions@automl-pycaret2
         with:
-          DATASET: "boston" #set dataset name here
-          TARGET: "medv" #set target variable here
+          DATASET: "boston"
+          TARGET: "medv"
       - name: Upload model.pkl
         uses: actions/upload-artifact@v2
         with: 
