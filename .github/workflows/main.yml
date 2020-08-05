@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: PyCaret AutoML Git Action
         id: model
-        uses: pycaret/pycaret-git-actions@v14.0
+        uses: pycaret/pycaret-git-actions@automl-pycaret2
         with:
           DATASET: "juice"
           TARGET: "Purchase"
